@@ -9,6 +9,11 @@
     "node_modules"
   ],
   "compilerOptions": {
-    "jsx": "preserve"
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
   }
 }

@@ -1,32 +1,43 @@
 {
-  "name": "template-next-app",
-  "version": "0.1.0",
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rrios-dev/template-next-app"
-  },
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@types/node": "18.11.13",
-    "@types/react": "18.0.26",
-    "@types/react-dom": "18.0.9",
-    "eslint": "8.29.0",
-    "eslint-config-next": "13.0.6",
-    "next": "13.0.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "template-node-package": "*",
-    "template-react-package": "*",
-    "typescript": "4.9.4"
-  },
-  "devDependencies": {
-    "next-transpile-modules": "^10.0.0",
-    "tsconfig": "*"
-  }
+    "name": "template-next-app",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "build": "next build",
+        "commit": "cz",
+        "dev": "next dev",
+        "lint": "eslint . --ext ts,tsx --max-warnings 0 --fix",
+        "prepare": "husky install",
+        "start": "next start",
+        "test": "jest"
+    },
+    "config": {
+        "commitizen": {
+            "path": "cz-conventional-changelog"
+        }
+    },
+    "dependencies": {
+        "@types/node": "18.11.13",
+        "@types/react": "18.0.26",
+        "@types/react-dom": "18.0.9",
+        "next": "13.0.6",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "styled": "*",
+        "typescript": "4.9.4"
+    },
+    "devDependencies": {
+        "@testing-library/react": "^13.4.0",
+        "commit-config": "*",
+        "eslint-config-react": "*",
+        "husky": "^8.0.2",
+        "jest-config-react": "*",
+        "next-transpile-modules": "^10.0.0",
+        "tsconfig": "*"
+    },
+    "author": "Roberto Ríos <contact@rrios.dev>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rrios-dev/template-next-app"
+    }
 }
